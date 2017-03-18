@@ -1,0 +1,15 @@
+pre[class*=language-] {
+    border-radius: 0;
+    border: none;
+    margin: 2rem 0;
+}
+
+code.nowrap {
+    white-space: normal;
+}
+
+p code {
+    background-color: #141414;
+    color: $white;
+    padding: 0.2rem 0.5rem;
+}

@@ -15,8 +15,11 @@
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/nav";
 
+// Prism JS
+@import 'prismjs/themes/prism-twilight';
+
+@import 'code';
 @import 'type';
-@import 'prism';
 @import 'layout';
 @import 'header';
 @import 'main';
