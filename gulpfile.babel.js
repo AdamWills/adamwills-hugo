@@ -13,7 +13,7 @@ import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
 
 const browserSync = BrowserSync.create();
-const hugoBin = "hugo";
+const hugoBin = process.env.NETLIFY ? "hugo_0.19" : "hugo";
 const defaultArgs = ["-d", "../dist", "-s", "site", "-v"];
 
 gulp.task("hugo", (cb) => buildSite(cb));
