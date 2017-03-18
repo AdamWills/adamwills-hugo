@@ -6,6 +6,7 @@ import gutil from "gulp-util";
 import imagemin from "gulp-imagemin";
 import mozjpeg from "imagemin-mozjpeg";
 import postcss from "gulp-postcss";
+import cssNano from "gulp-cssnano";
 import responsive from "gulp-responsive";
 import sass from "gulp-sass";
 import svgSprite from "gulp-svg-sprite";
@@ -30,6 +31,7 @@ gulp.task("css", () => (
       includePaths: ["node_modules"],
     }))
     .pipe(postcss([ autoprefixer() ]))
+    .pipe(cssNano())
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));

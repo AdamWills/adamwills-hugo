@@ -6,7 +6,6 @@
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
     <meta name="google-site-verification" content="fwZ9hTQNFjF-4br1arH77gYTwPfsza2AzPVtlGzDt4k" />
-    
     {{ if eq .URL "/" }}
     <!-- Unique metadata on homepage -->
     <title>{{ .Site.Title }} - {{ .Site.Params.subtitle }}</title>
@@ -16,13 +15,10 @@
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     <meta name="description" content="{{ .Description }}">
     {{ end }}
-
     <link href="/css/app.css" rel="stylesheet">
-
     <link href="{{ .Permalink }}" rel="canonical">
     <meta name="theme-color" content="{{ .Site.Params.themecolour }}">
     <link href="/rss.xml" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />
-    <link href="apple-touch-icon.png" rel="apple-touch-icon">
     <meta name="author" content="{{ .Site.Author.name }}">
   </head>
   <body>
