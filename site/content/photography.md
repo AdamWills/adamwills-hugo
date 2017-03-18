@@ -2,7 +2,6 @@
 date = "2017-03-11T13:54:58-05:00"
 title = "Photography"
 description = ""
-tags = ["photography"]
 email = "adam@adamwills.com"
 author = "Adam Wills"
 

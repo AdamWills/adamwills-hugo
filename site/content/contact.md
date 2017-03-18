@@ -1,7 +1,6 @@
 +++
 author = "Adam Wills"
 description = ""
-tags = ["misc"]
 date = "2017-03-15T23:10:48-04:00"
 title = "Contact"
 email = "adam@adamwills.com"

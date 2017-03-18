@@ -2,7 +2,6 @@
 date = "2017-03-11T14:03:37-05:00"
 title = "Creating Accessible HTML Tables Without Knowing HTML"
 description = "Curious"
-tags = ["accessibility","web"]
 email = "adam@adamwills.com"
 author = "Adam Wills"
 
