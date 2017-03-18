@@ -14,15 +14,7 @@
     <div class="sprite">
     {{ partial "symbol/svg/sprite.symbol.svg" . }}
     </div>
-
-  <script async src='/js/prism-custom.js'></script>
-  <!-- Google Analytics -->
-  <script>
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    ga('create', '{{ .Site.GoogleAnalytics }}', 'auto');
-    ga('send', 'pageview');
-  </script>
-  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
   <script>
     const toggleNav = document.querySelector('.toggle-nav');
     const body = document.querySelector('body');  
@@ -31,8 +23,10 @@
       e.target.classList.toggle('open');
       toggleNav.innerHTML = e.target.classList.contains('open') ? 'Close' : 'Menu';
     });
-
   </script>
+  <script async src='/js/prism-custom.js'></script>
+  <!-- Google Analytics -->
+  {{ template "_internal/google_analytics_async.html" . }}
 
 </body>
 </html>

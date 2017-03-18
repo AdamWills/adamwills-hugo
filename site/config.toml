@@ -1,6 +1,7 @@
 baseurl = "https://adamwills.io"
 languageCode = "en-us"
 title = "Adam Wills"
+googleAnalytics = "UA-9487590-17"
 
 [[menu.main]]
     name = "Home"
