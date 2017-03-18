@@ -1,0 +1,8 @@
+<aside class="navigation">
+    <nav class="nav">
+        {{ $currentNode := . }}
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="nav-link{{ if $currentNode.IsMenuCurrent "main" . }} active{{ end }}{{ if .Pre }} {{ .Pre }}{{ end }}">{{ .Name }}</a>
+        {{ end }}
+    </nav>
+</aside>

@@ -1,0 +1,46 @@
+.navigation {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    height: 100vh;
+    width: $sidenav-width;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+    background-color: $black;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: $white;
+        font-weight: $headings-font-weight;
+        font-size: $font-size-h4;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+
+        &:hover, &:focus {
+            background-color: $brand-primary;
+            color: $white;
+            transform: scale(1.1);
+        }
+    }
+
+    a.active {
+        color: $brand-primary;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+}
+
+.nav-inline {
+    justify-content: space-around;
+}
+
+.open-nav .navigation {
+    right: 0;
+}

@@ -1,0 +1,24 @@
+<!--
+#################
+# YouTube Enbed #
+#################
+
+## README:
+
+Override Hugo's default YouTube embed code to make the markup more simple and better compatible with bootstrap 4.
+
+### Useage
+
+Pass video id into a parameter and wrap everything in double curly braces:
+
+  < youtube id="tIuj-oMN-Fk" >
+
+Optionally pass autoplay or class parameter:
+
+  < youtube id="tIuj-oMN-Fk" autoplay=true class="youtube-example">
+
+-->
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe src="https://www.youtube.com/embed/{{ .Get "id" }}?color=white{{ with .Get "autoplay" }}{{ if eq . "true" }}&autoplay=1{{ end }}{{ end }}"{{ if .Get "class" }} class="{{ .Get "class" }}"{{ end }} allowfullscreen></iframe>
+</div>

@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+<main class="main">
+  <div class="main-container">
+    <div class="page-header">
+      <h1 class="page-header__title">{{ .Title }}</h1>
+    </div>
+      <ul class="blog-listing">
+      {{ range .Pages }}
+      <li class="category-item">
+        <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
+        <span class="readtime">{{ .ReadingTime }} min read</span>
+      </li>
+      {{ end }}
+      </ul>
+  </div>
+</main>
+{{ partial "footer.html" . }}

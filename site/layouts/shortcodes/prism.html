@@ -1,0 +1,2 @@
+{{ $new_contents := replace .Inner "<" "&lt;"  }}
+<pre class="language-{{ index .Params 0}}"><code class="language-{{ index .Params 0}}">{{ $new_contents | safeHTML }}</code></pre>

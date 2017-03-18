@@ -1,3 +1,38 @@
-<script src="/app.js"></script>
+    <footer class="footer">
+      <div class="bio">
+        Adam Wills is a web developer and photographer from Hamilton, Ontario, Canada. Site built using <a href="https://gohugo.io/">Hugo</a>.
+      </div>
+      <div class="social">
+        <a href="https://github.com/AdamWills"><svg class="icon"><use xlink:href="#github" /></svg></a>
+        <a href="https://twitter.com/adamwillsdev"><svg class="icon"><use xlink:href="#twitter" /></svg></a>
+        <a href="https://www.linkedin.com/in/adamwillsdev/"><svg class="icon"><use xlink:href="#linkedin" /></svg></a>
+      </div>
+    </footer>
+
+    {{ partial "nav.html" . }}
+
+    <div class="sprite">
+    {{ partial "symbol/svg/sprite.symbol.svg" . }}
+    </div>
+
+  <script async src='/js/prism-custom.js'></script>
+  <!-- Google Analytics -->
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', '{{ .Site.GoogleAnalytics }}', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  <script>
+    const toggleNav = document.querySelector('.toggle-nav');
+    const body = document.querySelector('body');  
+    toggleNav.addEventListener('click', e => {
+      body.classList.toggle('open-nav');
+      e.target.classList.toggle('open');
+      toggleNav.innerHTML = e.target.classList.contains('open') ? 'Close' : 'Menu';
+    });
+
+  </script>
+
 </body>
 </html>

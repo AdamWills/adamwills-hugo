@@ -1,0 +1,51 @@
+.main {
+    margin-bottom: $grid-gutter-width-base;
+    max-width: 90vw;
+    margin: 0 auto;
+    transition: opacity 0.3s ease-in-out;
+    &-container {
+        max-width: 38rem;
+        margin: 0 auto;
+    }
+}
+
+.page-header {
+    margin-bottom: 2rem;
+    text-align: right;
+}
+
+h2, h3, h4, h5, h6 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.main a {
+    
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.15s ease-in-out;
+    position: relative;
+    padding: 4px 0;
+
+    &:after {
+        content: ' ';
+        width: 100%;
+        left: 0;
+        bottom: 4px;
+        border-bottom: 2px solid $brand-primary;
+        position: absolute;
+    }
+
+    &:hover, &:focus {
+        padding: 4px 6px;
+        color: $white;
+        background-color: $brand-primary;
+        transform: scale(1.03);
+        text-decoration: none;
+        box-shadow: 3px 3px 0 $black;
+    }
+}
+
+.open-nav .main {
+    opacity: 0.3;
+}

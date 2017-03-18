@@ -1,10 +1,14 @@
-import gulp from "gulp";
-import cp from "child_process";
-import gutil from "gulp-util";
-import postcss from "gulp-postcss";
-import cssImport from "postcss-import";
-import cssnext from "postcss-cssnext";
+import autoprefixer from "autoprefixer";
 import BrowserSync from "browser-sync";
+import cp from "child_process";
+import gulp from "gulp";
+import gutil from "gulp-util";
+import imagemin from "gulp-imagemin";
+import mozjpeg from "imagemin-mozjpeg";
+import postcss from "gulp-postcss";
+import responsive from "gulp-responsive";
+import sass from "gulp-sass";
+import svgSprite from "gulp-svg-sprite";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
 
@@ -19,8 +23,13 @@ gulp.task("build", ["css", "js", "hugo"]);
 gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
 gulp.task("css", () => (
-  gulp.src("./src/css/*.css")
-    .pipe(postcss([cssnext(), cssImport({from: "./src/css/main.css"})]))
+  gulp.src("./src/scss/*.scss")
+    .pipe(sass({
+      outputStyle:  "nested",
+      precision: 10,
+      includePaths: ["node_modules"],
+    }))
+    .pipe(postcss([ autoprefixer() ]))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
@@ -39,14 +48,69 @@ gulp.task("js", (cb) => {
   });
 });
 
-gulp.task("server", ["hugo", "css", "js"], () => {
+gulp.task("img", () =>
+  gulp.src("./src/img/**.*")
+    // Resize images (use with <img> shortcode in hugo)
+    .pipe(responsive({
+      "*": [{
+        width: 546,
+        rename: {
+          suffix: "-sm"
+        },
+      }, {
+        width: 546 * 2,
+        rename: {
+          suffix: "-sm@2x"
+        },
+      }, {
+        width: 675,
+      }, {
+        width: 675 * 2,
+        rename: {
+          suffix: "@2x"
+        },
+      }],
+    }, {
+      silent: true,              // Don't spam the console
+      withoutEnlargement: false, // Allow image enlargement
+    }))
+    .pipe(gulp.dest("./dist/img")
+));
+
+gulp.task("img:build", ["img"], () =>
+  gulp.src(["./dist/img/*.{jpg,png,gif,svg}"])
+    // Optimise images
+    .pipe(imagemin([
+      imagemin.gifsicle(),
+      imagemin.optipng(),
+      imagemin.svgo(),
+      mozjpeg(),
+    ]))
+    .pipe(gulp.dest("./dist/img"))
+);
+
+gulp.task("svg", () =>
+  gulp.src("src/svg/*.svg")
+    .pipe(svgSprite({
+      mode: {
+        inline: true,
+        symbol: true
+      },
+      svg: {
+        xmlDeclaration: false,
+      }
+    }))
+    .pipe(gulp.dest("./site/layouts/partials"))
+);
+
+gulp.task("server", ["hugo", "css", "js", "img"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
     }
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./src/css/**/*.css", ["css"]);
+  gulp.watch("./src/scss/**/*.scss", ["css"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });
 

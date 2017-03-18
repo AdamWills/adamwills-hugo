@@ -1,0 +1,47 @@
+<!--
+#####################
+# Responsive Images #
+#####################
+
+## README:
+
+Allows browser to load a different image based on screen width and device pixel density. This allows for a smaller file size and better load performance when users are on a lower capacity device. Uses images generated in the gulp build script. Some browsers don't support <picture> and will load the fallback <img>; see browser support: http://caniuse.com/#feat=picture
+
+### Useage
+
+Leave off file extention in the src then pass it to a type parameter and wrap everything in double curly braces:
+
+  < img src="/img/example" type="jpg" alt="Example" >
+
+Optional: Use the 'caption' parameter to add an image caption:
+
+  < img src="/img/example" type="jpg" alt="Example" caption="This is a nice." >
+
+-->
+
+<div class="picture">
+  {{ if .Get "caption"}}
+  <figure>
+  {{ end }}
+    <picture>
+      <!-- Large screens -->
+      <source
+        media="(min-width: 768px)"
+        data-original-set="{{ .Get "src" }}.{{ .Get "type" }} 1x,
+                {{ .Get "src" }}@2x.{{ .Get "type" }} 2x">
+      <!-- Small screens -->
+      <source
+        media="(max-width: 767px)"
+        data-original-set="{{ .Get "src" }}-sm.{{ .Get "type" }} 1x,
+                {{ .Get "src" }}-sm@2x.{{ .Get "type" }} 2x">
+      <!-- Fallback -->
+      <img
+        data-original="{{ .Get "src" }}.{{ .Get "type" }}"
+        data-original-set="{{ .Get "src" }}@2x.{{ .Get "type" }} 2x"
+        alt="{{ .Get "alt" }}"{{ if .Get "caption"}} class="img-fluid figure-img"{{ end }}>
+    </picture>
+  {{ if .Get "caption"}}
+    <figcaption class="text-center">{{ .Get "caption" }}</figcaption>
+  </figure>
+  {{ end }}
+</div>

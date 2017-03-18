@@ -1,0 +1,51 @@
+.footer {
+    background: $black;
+    color: $white;
+    padding: $grid-gutter-width-base;
+    margin-top: $grid-gutter-width-base;
+    display: flex;
+    justify-content: space-around;
+    transition: opacity 0.3s ease-in-out;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    a {
+        text-decoration: underline;
+        color: $white;
+    }
+
+    .bio {
+        @media screen and (min-width: 768px) {
+            max-width: calc(100vw / 3);
+        }
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+        
+        @include media-breakpoint-down(sm) {
+            margin-top: $grid-gutter-width-base;
+            justify-content: center;
+        }
+        
+        .icon {
+            height: 40px;
+            width: 40px;    
+        }
+        
+        > * + * {
+            margin-left: 2rem;
+        }
+    }
+}
+
+.sprite {
+    display: none;
+}
+
+.open-nav .footer {
+    opacity: 0.3;
+}

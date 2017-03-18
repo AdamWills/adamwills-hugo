@@ -1,0 +1,43 @@
+.header {
+    background-color: $white;
+    color: $black;
+    padding: $grid-gutter-width-base;
+    @include media-breakpoint-up(sm) {
+        padding-bottom: 0;
+    }
+
+    .logo svg {
+        width: 100px;
+        height: auto;
+        transition: opacity 0.3s ease-in-out;
+        @include media-breakpoint-up(sm) {
+            width: 150px;
+        }
+    }
+
+    .btn-toggle {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        z-index: 2;
+        font-weight: $headings-font-weight;
+        font-size: $font-size-h4;
+
+        &:hover, &:focus {
+            background-color: $brand-primary;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}
+
+.open-nav {
+    .btn-toggle {
+        color: $white;
+        position: fixed;
+    }
+
+    .logo svg {
+        opacity: 0.3;
+    }
+}

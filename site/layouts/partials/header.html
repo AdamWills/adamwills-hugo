@@ -1,7 +1,29 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Hugo with Gulp and Webpack</title>
-    <link rel="stylesheet" href="/css/main.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    
+    {{ if eq .URL "/" }}
+    <!-- Unique metadata on homepage -->
+    <title>{{ .Site.Title }} - {{ .Site.Params.subtitle }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    {{ else }}
+    <!-- Unique metadata on other pages -->
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Description }}">
+    {{ end }}
+
+    <link href="/css/app.css" rel="stylesheet">
+
+    <link href="{{ .Permalink }}" rel="canonical">
+    <meta name="theme-color" content="{{ .Site.Params.themecolour }}">
+    <link href="/rss.xml" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+    <meta name="author" content="{{ .Site.Author.name }}">
   </head>
   <body>
+
+    {{ partial "head.html" . }}

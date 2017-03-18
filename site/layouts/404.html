@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+<main class="main">
+  <div class="main-container">
+    <div class="page-header">
+      <h1 class="page-header__title">Oh dear.<br>That didn't work.</h1>
+    </div>
+
+    <p>While you didn't find what you came here for, perhaps this can help you find what you're looking for?</p>
+
+    {{ $currentNode := . }}
+    <ul class="nav nav-inline">
+    {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}" class="nav-link{{ if $currentNode.IsMenuCurrent "main" . }} active{{ end }}{{ if .Pre }} {{ .Pre }}{{ end }}">{{ .Name }}</a></li>
+    {{ end }}
+    </ul>
+
+  </div>
+</main>
+
+{{ partial "footer.html" . }}

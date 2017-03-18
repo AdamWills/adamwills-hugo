@@ -1,3 +1,15 @@
-baseurl = "/"
+baseurl = "https://adamwills.io"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Adam Wills"
+
+[[menu.main]]
+    name = "Home"
+    weight = -110
+    identifier = "home"
+    url = "/"
+
+[[menu.main]]
+    name = "Blog"
+    weight = -100
+    identifier = "blog"
+    url = "/blog"

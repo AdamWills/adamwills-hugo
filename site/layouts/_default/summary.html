@@ -1,0 +1,10 @@
+<article class="summary-article">
+  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+
+  <!-- Show article summary without images -->
+  {{ .Summary | replaceRE "(?s:<div class=\"picture\">.*</div>)" "" | safeHTML }}
+
+  {{ if .Truncated }}
+  <a href="{{ .RelPermalink }}" class="more">Continue reading<span class="sr-only"> {{ .Title }}</span></a>
+  {{ end }}
+</article>
