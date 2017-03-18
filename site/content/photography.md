@@ -1,7 +1,7 @@
 +++
 date = "2017-03-11T13:54:58-05:00"
 title = "Photography"
-description = ""
+description = "View some of Adam's favourite photos that he's taken over the years taken at concerts and festivals from across the world."
 email = "adam@adamwills.com"
 author = "Adam Wills"
 

@@ -1,5 +1,5 @@
 +++
-description = ""
+description = "Adam is a web developer based in Hamilton, Ontario. Learn how he can help you with your next project."
 date = "2017-03-15T23:21:59-04:00"
 title = "Web Development"
 email = "adam@adamwills.com"

@@ -3,6 +3,15 @@ languageCode = "en-us"
 title = "Adam Wills"
 googleAnalytics = "UA-9487590-17"
 
+[params]
+    description = "Adam Wills is a web developer and photographer based in Hamilton, Ontario, Canada"
+    subtitle = "Web Developer. Photographer."
+    themecolour = "#d40d0a"
+    
+[author]    
+name = "Adam Wills"
+
+
 [[menu.main]]
     name = "Home"
     weight = -110

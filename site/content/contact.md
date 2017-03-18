@@ -1,6 +1,6 @@
 +++
 author = "Adam Wills"
-description = ""
+description = "Need to contact Adam? This is the place."
 date = "2017-03-15T23:10:48-04:00"
 title = "Contact"
 email = "adam@adamwills.com"
