@@ -1,9 +1,7 @@
 +++
 date = "2017-03-11T14:03:37-05:00"
 title = "Creating Accessible HTML Tables Without Knowing HTML"
-description = "Curious"
-email = "adam@adamwills.com"
-author = "Adam Wills"
+description = "Ever need to build an accessible HTML but didn't know how? Here's a great place to start!"
 
 +++
 
