@@ -31,7 +31,7 @@ export default {
   output: {
     path: path.join(__dirname, "dist"),
     publicPath: "/",
-    filename: "[name].js"
+    filename: "js/[name].js"
   },
   externals:  [/^vendor\/.+\.js$/]
 };
