@@ -2,6 +2,7 @@ baseurl = "https://adamwills.io"
 languageCode = "en-us"
 title = "Adam Wills"
 googleAnalytics = "UA-9487590-17"
+pluralizelisttitles = false
 
 [params]
     description = "Adam Wills is a web developer and photographer based in Hamilton, Ontario, Canada"
