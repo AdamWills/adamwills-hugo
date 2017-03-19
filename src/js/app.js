@@ -6,5 +6,6 @@ require("prismjs/components/prism-markup.js");
 require("prismjs/components/prism-bash.js");
 require("prismjs/components/prism-clike.js");
 require("prismjs/components/prism-javascript.js");
+require("prismjs/components/prism-go.js");
 
 const myLazyLoad = new lazyLoad();
