@@ -37,6 +37,6 @@ If you're interested in hiring me to shoot for you, [shoot me a line](/contact.h
 
 {{< img src="/img/ihsahn" type="jpg" alt="" caption="Ihsahn - Heavy Montreal 2015" >}}
 
-{{< img src="/img/Faith-No-More-1" type="jpg" alt="Faith No More" caption="Faith No More - Heavy Montreal 2015" >}}
+{{< img src="/img/faith-no-more" type="jpg" alt="Faith No More" caption="Faith No More - Heavy Montreal 2015" >}}
 
 {{< img src="/img/neurosis" type="jpg" alt="" caption="Neurosis - Heavy Montreal 2015" >}}

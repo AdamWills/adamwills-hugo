@@ -55,22 +55,16 @@ gulp.task("img", () =>
     // Resize images (use with <img> shortcode in hugo)
     .pipe(responsive({
       "*": [{
-        width: 546,
-        rename: {
-          suffix: "-sm"
-        },
+        width: 480,
+        rename: {suffix: "-sm"},
       }, {
-        width: 546 * 2,
-        rename: {
-          suffix: "-sm@2x"
-        },
+        width: 480 * 2,
+        rename: {suffix: "-sm@2x"},
       }, {
         width: 675,
       }, {
         width: 675 * 2,
-        rename: {
-          suffix: "@2x"
-        },
+        rename: {suffix: "@2x"},
       }],
     }, {
       silent: true,              // Don't spam the console

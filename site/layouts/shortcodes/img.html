@@ -26,12 +26,12 @@ Optional: Use the 'caption' parameter to add an image caption:
     <picture>
       <!-- Large screens -->
       <source
-        media="(min-width: 768px)"
+        media="(min-width: 535px)"
         data-original-set="{{ .Get "src" }}.{{ .Get "type" }} 1x,
                 {{ .Get "src" }}@2x.{{ .Get "type" }} 2x">
       <!-- Small screens -->
       <source
-        media="(max-width: 767px)"
+        media="(max-width: 534px)"
         data-original-set="{{ .Get "src" }}-sm.{{ .Get "type" }} 1x,
                 {{ .Get "src" }}-sm@2x.{{ .Get "type" }} 2x">
       <!-- Fallback -->
