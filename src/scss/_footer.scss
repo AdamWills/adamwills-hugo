@@ -2,7 +2,7 @@
     background: $black;
     color: $white;
     padding: $grid-gutter-width-base;
-    margin-top: $grid-gutter-width-base;
+    margin-top: $grid-gutter-width-base * 2;
     display: flex;
     justify-content: space-around;
     transition: opacity 0.3s ease-in-out;
