@@ -5,6 +5,8 @@ description = "How I added SASS support, image processing and svg sprites to the
 
 +++
 
+*[Check out Part 1 of my series on getting started with Hugo](/blog/discovering-hugo-1)*
+
 I love automation. Task runners and now module bundlers have become an essential part of building sites for me. Whether it's using CSS preprocessors to help speed up writing CSS or concatenating and minifying JS files, tools that help me produce a project faster is something I have come to rely on. When I discovered that Netlify provides a boilerplate for Hugo sites that includes some of this automation, I knew that I had to give it a try.
 
 Out of the box, [Victor Hugo](https://github.com/netlify/victor-hugo) (Netlify's hugo boilerplate, named after the French novelist of the same name, who's most famous works include Les Miséerables and The Hunchback of Notre-Dame), comes with [Gulp](http://gulpjs.com/) and [Webpack](https://webpack.js.org/) to help with your asset pipeline.

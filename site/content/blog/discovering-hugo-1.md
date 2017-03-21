@@ -28,4 +28,4 @@ A few days later, with plenty of mucking around (which I'll document over the ne
 
 Initial thoughts on Hugo? I'm really digging it. I've incorporated a build process (Gulp, SASS, webpack); the learning curve was relatively easy; the documentation is pretty good; and with [Smashing Magazine adopting it](https://next.smashingmagazine.com/2017/03/a-little-surprise-is-waiting-for-you-here--meet-the-next-smashing-magazine/) for their redesign, I have a feeling that we're going to start seeing instances of Hugo sites out there.
 
-Stay tuned for more about my discovery of Hugo.
+Check out [part 2 of my discovering Hugo series](/blog/discovering-hugo-2-workflow) where I look at customizing a workflow that includes compiling SASS, image optimization and SVG sprites.
