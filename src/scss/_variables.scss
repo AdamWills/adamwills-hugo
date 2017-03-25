@@ -7,5 +7,9 @@ $brand-primary: $red;
 $header-height: 90px;
 $sidenav-width: 300px;
 
-$font-size-root:          22px;
+$font-size-base: calc(16px + .25vw);
+$blockquote-font-size: calc(22px + .25vw);
+$input-height: $font-size-base;
+$close-font-size: $font-size-base;
+
 $headings-font-weight:    700;

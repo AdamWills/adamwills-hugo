@@ -1,8 +1,8 @@
 @import 'variables';
 
+// Core variables and mixins
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
-@import "bootstrap/scss/custom";
 
 // Reset and dependencies
 @import "bootstrap/scss/normalize";
@@ -20,12 +20,14 @@
 @import 'prismjs/themes/prism-twilight';
 
 @import 'code';
-@import 'type';
-@import 'layout';
-@import 'header';
-@import 'main';
 @import 'cta';
-@import 'posts';
-@import 'nav';
 @import 'footer';
+@import 'header';
+@import 'layout';
+@import 'main';
+@import 'nav';
+@import 'photos';
+@import 'posts';
+@import 'prism';
 @import 'tables';
+@import 'type';
