@@ -21,6 +21,6 @@
     <link href="/rss.xml" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />
     <meta name="author" content="{{ .Site.Author.name }}">
   </head>
-  <body>
+  <body class="{{ .Params.bodyclass }}">
 
     {{ partial "head.html" . }}

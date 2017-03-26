@@ -1,0 +1,82 @@
+.resume {
+    &__skills {
+        padding-left: 0;
+
+        li {
+            background: $black;
+            color: $white;
+            display: inline-block;
+            list-style: none;
+            margin: 0.25rem;
+            padding: 0.5rem 1rem;
+            position: relative;
+            transition: all 0.1s ease-in-out;
+            will-change: scale;
+
+            &:hover, &:focus {
+                background: $red;
+                transform: scale(1.3);
+                z-index: 2;
+                box-shadow: 0px 5px 5px rgba($black, 0.2);
+            }
+        }
+    }
+
+    &__featured {
+        background: rgba($black, 0.1);
+        padding: 2rem;
+        margin-bottom: 4rem;
+        position: relative;
+
+        h4:first-of-type {
+            margin: 0;
+            padding-right: 2rem;
+        }
+
+        & *:last-child {
+            margin-bottom: 0;
+        }
+
+        &-expand {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 1rem;
+            width: calc(2rem + 24px);
+            height: calc(2rem + 24px);
+            transform: rotate(45deg);
+            transition: all 0.3s ease-in-out;
+        }
+
+        &.open &-expand {
+            transform: rotate(135deg);
+            fill: $brand-primary;
+        }
+
+        &-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;            
+        }
+
+        &.open &-details {
+            max-height: 800px;
+            padding-top: 2rem;
+        }
+        
+    }
+
+
+
+    h2 {
+        border-bottom: 2px solid $black;
+        margin-top: 2em;
+        text-align: left;
+    }
+
+    h3 {
+        background: $black;
+        color: $white;
+        padding: 0.5rem 1rem;
+    }
+}

@@ -1,0 +1,7 @@
+<div class="resume__featured" id="featured-{{ .Get "title" | urlize}}">
+    <h4>Featured Project - {{ .Get "title" }}</h4>
+    <svg class="resume__featured-expand" data-target="featured-{{ .Get "title" | urlize}}" role="button"><use xlink:href="#close" /></svg>
+    <div class="resume__featured-details">
+        {{ .Inner }}
+    </div>
+</div>
