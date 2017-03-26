@@ -84,6 +84,7 @@ Norfolk County had a dated WordPress theme - it was time for makeover that prior
     <li>SQL</li>
     <li>SVG</li>
     <li>UX</li>
+    <li>Vagrant</li>
     <li>WordPress</li>
 </ul>
 
