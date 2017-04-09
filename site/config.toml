@@ -8,10 +8,10 @@ pluralizelisttitles = false
     description = "Adam Wills is a web developer and photographer based in Hamilton, Ontario, Canada"
     subtitle = "Web Developer. Photographer."
     themecolour = "#d40d0a"
+    twitter = "@adamwillsdev"
     
 [author]    
 name = "Adam Wills"
-
 
 [[menu.main]]
     name = "Home"

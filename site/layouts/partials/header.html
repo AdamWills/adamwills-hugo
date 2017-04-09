@@ -20,6 +20,10 @@
     <meta name="theme-color" content="{{ .Site.Params.themecolour }}">
     <link href="/rss.xml" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />
     <meta name="author" content="{{ .Site.Author.name }}">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="{{ .Site.Params.twitter }}" />
+    <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta name="twitter:description" content="{{ .Description }}" />
   </head>
   <body class="{{ .Params.bodyclass }}">
 
