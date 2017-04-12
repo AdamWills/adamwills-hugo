@@ -4,6 +4,10 @@ title = "Dealing with version conflicts between Hugo and Netlify"
 
 +++
 
+{{% update %}}
+**Update**: Netlify has added a much easier way to specify which version of Hugo to use - details are [available here](https://www.netlify.com/blog/2017/04/11/netlify-plus-hugo-0.20-and-beyond/).
+{{% /update %}}
+
 One of the trickier issues that I dealt with when getting started with Hugo and deploying to Netlify involved what I later found out to be a conflict of versions. Netlify by default is running Hugo 0.17 - but if you're like myself and are newer to Hugo, you might be running a newer version. In my case, the newset version was 0.19.
 
 When I was deploying to Netlify (through their pretty slick integration with Github), I kept getting issues that didn't seem related to versions - but seemed more like I had issues with my templating. In my case, I kept getting the following:

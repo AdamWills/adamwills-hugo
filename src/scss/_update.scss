@@ -1,0 +1,11 @@
+.update {
+    padding: 1rem;
+    background: $grey;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    border: 4px solid darken($grey,10%);
+    
+    p:last-of-type {
+        margin-bottom:0;
+    }
+}
