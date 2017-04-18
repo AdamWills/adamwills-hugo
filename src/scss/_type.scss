@@ -5,3 +5,7 @@ h2, h3 {
 p {
     margin-bottom: 2rem;
 }
+
+.embed-responsive + p {
+    margin-top: 2rem;
+}
