@@ -1,0 +1,10 @@
+.blog-listing {
+    li + li {
+        margin-top: 1rem;
+    }
+
+    .readtime {
+        display: block;
+        font-size: 0.9em;
+    }
+}
