@@ -11,9 +11,9 @@ bodyclass = "resume"
 
 #### 2014 - Current
 
-* Developing customized websites and applications to help clients achieve their business goals,while emphasizing performance, accessibility and optimization.
-* Working with other developers and designers using an Agile framework in order to ship fast and frequently.
-* Initiated company-wide initiatives on code-reviews, git processes, and automated deployments.
+* Building customized solutions for clients ranging from marketing websites to marketing plans to custom built applications
+* Working with other developers and designers using an Agile framework in order to ship fast and frequently
+* Initiated company-wide initiatives on code-reviews, git processes, and automated deployments
 * Contribute to company blog ([example](http://humancode.ca/blog/an-introduction-to-web-accessibility/))
 
 {{% featured title="Beatties" %}}
@@ -30,7 +30,7 @@ Working with the marketing team, I was the sole developer in charge of taking de
 
 * Custom responsive WordPress theme
 * Job Postings
-* Integration with Hubspot
+* Integration with HubSpot
 
 {{% /featured %}}
 
@@ -38,8 +38,8 @@ Working with the marketing team, I was the sole developer in charge of taking de
 
 #### 2008 - Current
 
-* Develop, host and maintain a number of websites for small businesses and non-profit organizations.
-* Create custom solutions for existing content management systems (such as WordPress) to address the specific needs of the business.
+* Develop, host and maintain a number of websites for small businesses and non-profit organizations
+* Create custom solutions for existing content management systems (such as WordPress) to address the specific needs of the business
 
 {{% featured title="Norfolk County" %}}
 
@@ -66,7 +66,7 @@ Norfolk County had a dated WordPress theme - it was time for makeover that prior
 * Redeveloped County website with a focus on content organization, accessibility and increased automation.
 * Developed internal applications (.net and SharePoint) to improve repetitive processes and increase productivity in an effort to move towards a more paperless workplace.
 
-## Experienced with...
+## Experienced with...  
 
 <ul class="resume__skills">
     <li>Accessiblity</li>
@@ -75,13 +75,13 @@ Norfolk County had a dated WordPress theme - it was time for makeover that prior
     <li>Git</li>
     <li>Gulp/Grunt</li>
     <li>HTML</li>
-    <li>Hugo</li>
     <li>JavaScript</li>
     <li>Performance</li>
     <li>Photography</li>
     <li>Photoshop</li>
     <li>PHP</li>
     <li>SQL</li>
+    <li>Static Site Generators</li>
     <li>SVG</li>
     <li>UX</li>
     <li>Vagrant</li>
