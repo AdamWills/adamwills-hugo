@@ -1,0 +1,10 @@
+{
+  "name": "Adam Wills. Web Developer. Photographer.",
+  "short_name": "Adam Wills",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#d40d0a",
+  "theme_color": "#d40d0a"
+}

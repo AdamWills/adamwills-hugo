@@ -10,6 +10,20 @@ require("prismjs/components/prism-go.js");
 require("prismjs/components/prism-javascript.js");
 require("prismjs/components/prism-scss.js");
 
+
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker.register("/sw.js").then(function(registration) {
+      // Registration was successful
+      console.log("ServiceWorker registration successful with scope: ", registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.error("ServiceWorker registration failed: ", err);
+    });
+  });
+}
+
 const myLazyLoad = new lazyLoad();
 
 function toggleDetails(event) {
