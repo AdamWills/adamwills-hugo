@@ -7,7 +7,7 @@ tags = [ "photography" ]
 
 This past weekend the first outdoor concert took place at Hamilton's Tim Horton's Field, which featured Billy Talent, Danko Jones and Hamilton's own Teenage Head. I was fortunate enough to be a part of it and took my camera gear along with me.
 
-For a full recap, head over to the CFMU Blog, which features a review by Kristin Archer (of I ❤️ Hamilton). 
+For a full recap, head over to the <a href="http://cfmu.ca/posts/98-hamilton-had-the-home-field-advantage-with-billy-talent">CFMU blog</a>, which features a review by <a href="https://twitter.com/kristin_archer">Kristin Archer</a> (of <a href="http://ihearthamilton.ca">I ❤️ Hamilton</a>). 
 
 {{< img src="/img/teenage-head-01" type="jpg" alt="" caption="Teenage Head" >}}
 {{< img src="/img/teenage-head-02" type="jpg" alt="" caption="Teenage Head" >}}
