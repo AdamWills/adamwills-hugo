@@ -49,10 +49,10 @@ Working with the marketing team, I was the sole developer in charge of taking de
 Sole producer
 
 ##### Description
-Norfolk County had a dated WordPress theme - it was time for makeover that prioritized a clearner design, responsiveness and simpler navigation. Working with their IT department in an iterative fashion, I designed and developed a custom solution, including some plugins, that met their current needs and provided them a platform to continue to grow online.
+Norfolk County had a dated WordPress theme - it was time for a makeover that prioritized a cleaner design, responsiveness and simpler navigation. Working with their IT department in an iterative fashion, I designed and developed a custom solution, including some plugins, that met their current needs and provided them a platform to continue to grow online.
 
 ##### Features
-* Design and development of custom, responsive WordPress theme
+* Design and development of a custom, responsive WordPress theme
 * Improved navigation and IA
 * Plugin development
 * Accessibility

@@ -21,7 +21,7 @@ Within our `scss` folder, let's take a peek at [bootstrap.scss](https://github.c
 
 ## SASS and !default
 
-Examining the `_variables.scss` file, we notice that whenver a variable is declared, it is followed by a `!default` flag. Let's take a look at how that flag works.
+Examining the `_variables.scss` file, we notice that whenever a variable is declared, it is followed by a `!default` flag. Let's take a look at how that flag works.
 
 Let's examine the following code - and this might be how Bootstrap most often gets used.
 
@@ -107,9 +107,9 @@ At the top of the file is my custom variables file which overrides any Bootstrap
 
 My strategy for slimming down things - start with the required core components and some basic files (normalize, reboot and type) - and as I start to add content, I add related files (tables, buttons).
 
-I can use the same techniques with Bootstrap's JavaScript files. The build process that I've using takes advantage of webpack, which makes including pieces of JavaScript incredibly easy.
+I can use the same techniques with Bootstrap's JavaScript files. The build process that I'm using takes advantage of webpack, which makes including pieces of JavaScript incredibly easy.
 
-However, I'm not actually using **any** of Bootstrap's JavaScript's functionality. Not that any of it is bad - at this stage of my site, there isn't a need for it.
+However, I'm not actually using **any** of Bootstrap's JavaScript functionality. Not that any of it is bad - at this stage of my site, there isn't a need for it.
 
 ## Results
 

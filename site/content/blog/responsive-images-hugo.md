@@ -5,7 +5,7 @@ description = "How I'm using gulp and Hugo shortcodes for easy responsive images
 tags = [ "gulp", "performance", "images", "responsive", "hugo", "javascript" ]
 +++
 
-I don't have a lot of imagary on my site. My current priority here is content and performance. However, it's hard to have a photography section without images. In line with my priorities, I wanted to make sure that when I am displaying images, I'm doing them as in a way that combines quality with performance. Of course, making them easy to add to my site is always important.
+I don't have a lot of imagery on my site. My current priority here is content and performance. However, it's hard to have a photography section without images. In line with my priorities, I wanted to make sure that when I am displaying images, I'm doing them as in a way that combines quality with performance. Of course, making them easy to add to my site is always important.
 
 So, in my new site, there were a few things that I could do to help automate things.
 
@@ -59,7 +59,7 @@ Let's break this down a bit. We'll start off with the call to the shortcode - th
 {{< prism xml >}}<!-- How the shortcode is used: -->
 {{&lt; img src="/img/ascendia" type="jpg" alt="" caption="Ascendia - ProgPower 2016" >}}{{< /prism >}}
 
-This is a custom shortcode, so all of the naming and parameters are arbitrary - this isn't a default Hugo feature. I'm using a shortcode that I've name `img` along with a number of parameters - the path of the image, the type of image, alt text, and a caption. In this example, I'm using a blank alt text as I'm supplying a caption instead - there's no reason to duplicate content.
+This is a custom shortcode, so all of the naming and parameters are arbitrary - this isn't a default Hugo feature. I'm using a shortcode that I've named `img` along with a number of parameters - the path of the image, the type of image, alt text, and a caption. In this example, I'm using a blank alt text as I'm supplying a caption instead - there's no reason to duplicate content.
 
 Let's walk through what's happening in the shortcode itself.
 
@@ -94,7 +94,7 @@ If we supply a caption parameter in our shortcode, we're going to use the [figur
 
 Now, we're using the [picture element](https://developer.mozilla.org/en/docs/Web/HTML/Element/picture) to actually display the image itself.
 
-We are supplying 2 source - one for smaller devices and one for other devices. Within each source, we're also supplying both a retina version and standard resolution to ensure that our images look crisp when needed.
+We are supplying 2 sources - one for smaller devices and one for other devices. Within each source, we're also supplying both a retina version and standard resolution to ensure that our images look crisp when needed.
 
 You'll notice that our shortcode doesn't actually supply a `src` or `srcset` parameter though - which is what actually outputs the image. We'll get to that in the next section about lazy loading.
 

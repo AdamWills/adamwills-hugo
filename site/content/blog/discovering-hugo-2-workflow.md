@@ -9,7 +9,7 @@ description = "How I added SASS support, image processing and svg sprites to the
 
 I love automation. Task runners and now module bundlers have become an essential part of building sites for me. Whether it's using CSS preprocessors to help speed up writing CSS or concatenating and minifying JS files, tools that help me produce a project faster is something I have come to rely on. When I discovered that Netlify provides a boilerplate for Hugo sites that includes some of this automation, I knew that I had to give it a try.
 
-Out of the box, [Victor Hugo](https://github.com/netlify/victor-hugo) (Netlify's hugo boilerplate, named after the French novelist of the same name, who's most famous works include Les Miséerables and The Hunchback of Notre-Dame), comes with [Gulp](http://gulpjs.com/) and [Webpack](https://webpack.js.org/) to help with your asset pipeline.
+Out of the box, [Victor Hugo](https://github.com/netlify/victor-hugo) (Netlify's hugo boilerplate, named after the French novelist of the same name, who's most famous works include Les Misérables and The Hunchback of Notre-Dame), comes with [Gulp](http://gulpjs.com/) and [Webpack](https://webpack.js.org/) to help with your asset pipeline.
 
 ## Looking at the gulpfile.js
 
@@ -29,7 +29,7 @@ This is a great start - but there's a couple things missing that I felt that I w
 
 ## Adding SASS support
 
-I love writing in [SASS](http://sass-lang.com/). Variables, partials, mixins and nesting help me right CSS incredibly quickly - and efficiency is essential in getting products out the door quickly.
+I love writing in [SASS](http://sass-lang.com/). Variables, partials, mixins and nesting help me write CSS incredibly quickly - and efficiency is essential in getting products out the door quickly.
 
 So, by tweaking the `css` task a bit, I was able to easily get up and running with SASS.
 
@@ -68,7 +68,7 @@ Note: I added node_modules into my includePaths so I can easily include SASS fil
 
 As I am going to be posting some of [my photos](/photography) here and there on my site, having responsive images that are compressed is pretty important to me. Sure, I could do some of these things in Photoshop with some of the more modern export tools available to me - but having my assets pipeline handle things is way easier.
 
-Here is currently my process for getting a responsive image up on my site:
+Here is my current process for getting a responsive image up on my site:
 
 1. Export an image from Lightroom/Photoshop into my src/img folder
 2. Gulp handles creating responsive versions of that image (small, small retina, regular, regular retina)
@@ -107,7 +107,7 @@ gulp.task("img", () =>
 ));
 {{< /prism >}}
 
-So now, for each image in my src/img directory, 4 images get created. Then, using a shortcode (which I'll post about later), I can easily create responsive images in my conent.
+So now, for each image in my src/img directory, 4 images get created. Then, using a shortcode (which I'll post about later), I can easily create responsive images in my content.
 
 We have a separate task for the build process, as I don't really care about the compression during my local development. The image compression uses [imagemin](https://github.com/imagemin/imagemin) and a few of their plugins (depending on the filetypes). So, let's install those.
 
@@ -155,7 +155,7 @@ Roughly 16% savings of bandwidth that our user doesn't have to deal with at such
 
 Any time a logo or icon comes up, I always ensure that I'm using an SVG. Why? With SVGs being vector images, they're scalable to any size and resolution of screen; not to mention how small they are in relation to png files. Throw in the ability to interact with them via CSS and/or JavaScript? It's silly not to use them in today's web.
 
-There's quite a few ways to use SVGs on the web though. As my goal is to make my site as performant as possible, I decided to go with [the SVG sprite approach]()https://css-tricks.com/svg-symbol-good-choice-icons/. Compile all of my SVG logos into a single file, then simple reference them whenever they're needed. No extra http requests required.
+There's quite a few ways to use SVGs on the web though. As my goal is to make my site as performant as possible, I decided to go with [the SVG sprite approach]()https://css-tricks.com/svg-symbol-good-choice-icons/. Compile all of my SVG logos into a single file, then simply reference them whenever they're needed. No extra http requests required.
 
 Let's add an svg task to our gulpfile to do the legwork for us.
 

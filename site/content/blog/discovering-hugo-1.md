@@ -10,9 +10,9 @@ My previous site was built on [WordPress](https://wordpress.org/). I do love Wor
 
 Performance has become something I've been very interested in the past couple of years. Ensuring that sites load quickly is something I find really important. We've all been in situations where we've been on spotty wifi or only had a couple bars on our cell-phone - and a site that we really needed at the time just wasn't accessible.
 
-WordPress can be made to load fast - but it takes work. Caching can be a little tedious at times. I rarely have the time to keep my site updated, nevermind the time it takes to make my personal site purr (my wonderful clients get all of my attention on my "free" time).
+WordPress can be made to load fast - but it takes work. Caching can be a little tedious at times. I rarely have the time to keep my site updated, nevermind the time it takes to make my personal site purr (my wonderful clients get all of my attention in my "free" time).
 
-So, I was on the market for something new. Something quick and easey. Also, new technology is fun.
+So, I was on the market for something new. Something quick and easy. Also, new technology is fun.
 
 ## Enter the static site generator
 
@@ -22,7 +22,7 @@ I've been thinking about using a static site generator for awhile now. The idea 
 
 ## Hugo
 
-What I liked about Hugo - is it's simplicity. Rather than finicking around with Ruby versions and Jekyll, Hugo comes as a cross-platform executable. One [quick download](https://gohugo.io/overview/quickstart/#step-1-install-hugo), a quick command to scaffold out a new site and a built in server to serve the site? Within minutes, I was up and running.
+What I liked about Hugo - is its simplicity. Rather than finicking around with Ruby versions and Jekyll, Hugo comes as a cross-platform executable. One [quick download](https://gohugo.io/overview/quickstart/#step-1-install-hugo), a quick command to scaffold out a new site and a built in server to serve the site? Within minutes, I was up and running.
 
 A few days later, with plenty of mucking around (which I'll document over the next little while), I have a performant new site with continuous deployment to a CDN (not to mention HTTPS) - all for free (thanks [Netlify](https://www.netlify.com/) - you've been great so far)!
 
