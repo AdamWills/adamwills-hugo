@@ -4,10 +4,7 @@ date = "2017-03-15T23:21:59-04:00"
 title = "Web Development"
 email = "adam@adamwills.com"
 author = "Adam Wills"
-
-[menu.main]
-  name   = "Web"
-  weight = 80
+draft = true
 
 +++
 
