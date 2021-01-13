@@ -40,8 +40,8 @@ Optional: Use the 'caption' parameter to add an image caption:
         data-original-set="{{ .Get "src" }}@2x.{{ .Get "type" }} 2x"
         alt="{{ .Get "alt" }}"{{ if .Get "caption"}} class="img-fluid figure-img"{{ end }}>
     </picture>
-  {{ if .Get "caption"}}
-    <figcaption>{{ .Get "caption" }}</figcaption>
+  {{ with .Get "caption"}}
+    <figcaption>{{ . }}</figcaption>
   </figure>
   {{ end }}
 </div>
